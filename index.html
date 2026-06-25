@@ -1,28 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="utf-8">
-    <title>eduarsb</title>
+    <title>Eduardo Sanchez | Desarrollador Web</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta name="description" content="Portafolio profesional de Eduardo Sánchez - Desarrollador Web Senior">
+    <meta name="theme-color" content="#0a0a0f">
     <link rel="icon" href="img/icon.png" type="image/x-icon">
 
-    <!-- Google Web Fonts -->
-    <!-- <link rel="preconnect" href="https://fonts.gstatic.com"> -->
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">  -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
 
-    <!-- Libraries Stylesheet -->
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <!-- Font Awesome 6 -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
 
-    <!-- Customized Bootstrap Stylesheet -->
+    <!-- Base Stylesheet (Bootstrap grid) -->
     <link href="css/style.css" rel="stylesheet">
+
+    <!-- Dark Theme -->
+    <link href="css/dark-theme.css" rel="stylesheet">
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="51">
-    <!-- Navbar Start -->
-    <nav class="navbar fixed-top shadow-sm navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-lg-5">
+    <!-- Navbar -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light py-3 py-lg-0 px-lg-5">
+        <a href="index_en.html" class="lang-switch" title="Switch to English">EN</a>
         <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -32,140 +37,126 @@
                 <a href="#about" class="nav-item nav-link">Acerca</a>
                 <a href="#qualification" class="nav-item nav-link">Experiencia</a>
                 <a href="#skill" class="nav-item nav-link">Habilidades</a>
-                <a href="#service" class="nav-item nav-link">Servicio</a>
-                <!-- <a href="#portfolio" class="nav-item nav-link">Portfolio</a> -->
+                <a href="#service" class="nav-item nav-link">Servicios</a>
+                <a href="#contact" class="nav-item nav-link">Contacto</a>
             </div>
         </div>
     </nav>
-    <!-- Navbar End -->
 
-    <!-- Header Start -->
-    <div class="container-fluid bg-primary d-flex align-items-center mb-5 py-5" id="home" style="min-height: 100vh;">
+    <!-- Hero -->
+    <div class="container-fluid d-flex align-items-center py-5" id="home" style="min-height: 100vh;">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-lg-5 px-5 pl-lg-0 pb-5 pb-lg-0">
-                    <img class="img-fluid w-100 rounded-circle shadow-sm" src="img/profile.jpg" alt="">
+                <div class="col-lg-5 px-5 pl-lg-0 pb-5 pb-lg-0 fade-in">
+                    <img class="img-fluid w-100" src="img/profile.jpg" alt="Eduardo Sánchez">
                 </div>
-                <div class="col-lg-7 text-center text-lg-left">
-                    <h3 class="text-white font-weight-normal mb-3">Hola, soy</h3>
-                    <h1 class="display-3 text-uppercase text-primary mb-2" style="-webkit-text-stroke: 2px #ffffff;">Héctor Sánchez</h1>
-                    <h1 class="typed-text-output d-inline font-weight-lighter text-white"></h1>
-                    <div class="typed-text d-none">Desarrollador web, Desarrollador Angular, Desarrollador React, Arquitecto de APIs</div>
+                <div class="col-lg-7 text-center text-lg-left fade-in stagger-2">
+                    <h3 class="font-weight-normal mb-3">Hola, soy</h3>
+                    <h1 class="display-3 text-uppercase mb-2">Eduardo Sánchez</h1>
+                    <h1 class="typed-text-output d-inline font-weight-lighter"></h1>
+                    <div class="typed-text d-none">Frontend Developer, API Architect, Micro Frontends, Tech Mentor</div>
                     <div class="d-flex align-items-center justify-content-center justify-content-lg-start pt-5">
-                        <a href="img/hector_sanchez_cv_es.pdf" download="CV_HectorESB.pdf" class="btn btn-outline-light mr-5">Descargar CV</a>
-                        <a href="https://skyloft.xyz/" target="_blank" class="btn btn-light mr-5">Mis proyectos</a>
+                        <a href="img/hector_sanchez_cv_es.pdf" download="CV_EduardoSB.pdf" class="btn btn-outline-light mr-5">Descargar CV</a>
+                        <a href="https://www.dawnforge.xyz/" target="_blank" class="btn btn-light mr-5">Mis proyectos</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Header End -->
 
-
-    <!-- About Start -->
+    <!-- About -->
     <div class="container-fluid py-5" id="about">
         <div class="container">
-            <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Acerca</h1>
-                <h1 class="position-absolute text-uppercase text-primary">Acerca de mi</h1>
+            <div class="position-relative d-flex align-items-center justify-content-center section-header">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px rgba(255,255,255,0.07);">Acerca</h1>
+                <h1 class="position-absolute text-uppercase">Sobre mi</h1>
             </div>
             <div class="row align-items-center">
-                <div class="col-lg-5 pb-4 pb-lg-0">
-                    <img class="img-fluid rounded w-100" src="img/about.jpg" alt="">
+                <div class="col-lg-5 pb-4 pb-lg-0 fade-in-left">
+                    <img class="img-fluid rounded w-100" src="img/about.jpg" alt="Sobre mi">
                 </div>
-                <div class="col-lg-7">
-                    <h3 class="mb-4">Hola!</h3>
-                    <p>Soy una persona a la que le encanta aprender constantemente, y por eso creo que he adquirido mucha experiencia en desarrollo frontend.
-                        He tenido que enfrentarme a diversos escenarios para cumplir con los objetivos de los proyectos y he programado en varias tecnologías.
-                        En cada caso, he tenido que aprender leyendo documentación, investigando en foros y ahora utilizando inteligencia artificial, entre otras herramientas.
-                        Esto me ha permitido mejorar día a día. Además, mi experiencia me permite encontrar soluciones óptimas a los problemas, o a veces
-                        soluciones menos óptimas, pero que me ayudan a crecer y mejorar para el futuro.</p>
+                <div class="col-lg-7 fade-in-right">
+                    <h3 class="mb-4">+10 años construyendo para la web</h3>
+                    <p>Soy desarrollador frontend senior con experiencia liderando la adopción de arquitecturas modernas como micro frontends, definiendo estándares de código para equipos multidisciplinarios y diseñando APIs que conectan múltiples unidades de negocio.</p>
+                    <p>He trabajado con React, Angular, Vue, Laravel y Node.js en proyectos que van desde plataformas hospitalarias hasta sistemas financieros en empresas como Grupo Salinas. Mi enfoque combina profundidad técnica con visión de producto: entiendo que el código existe para resolver problemas reales.</p>
                     <div class="row mb-3">
-                        <div class="col-sm-6 py-2"><h6>Nombre: <span class="text-secondary">Héctor Eduardo Sánchez Barrera</span></h6></div>
-                        <div class="col-sm-6 py-2"><h6>Fecha: <span class="text-secondary">6 April 1992</span></h6></div>
-                        <div class="col-sm-6 py-2"><h6>Grado: <span class="text-secondary">Maestría</span></h6></div>
-                        <div class="col-sm-6 py-2"><h6>Experiencia: <span class="text-secondary">10 años</span></h6></div>
-                        <div class="col-sm-6 py-2"><h6>Correo: <span class="text-secondary">eduarsb4@gmail.com</span></h6></div>
-                        <div class="col-sm-6 py-2"><h6>Dirección: <span class="text-secondary">Ciudad de México</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Nombre: <span>Eduardo Sánchez </span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Grado: <span>Maestría</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Ubicación: <span>Ciudad de México</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Disponibilidad: <span>Remoto / Híbrido</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Correo: <span>eduarsb4@gmail.com</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>LinkedIn: <span>hectorsb4</span></h6></div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- About End -->
 
-
-    <!-- Qualification Start -->
+    <!-- Experience -->
     <div class="container-fluid py-5" id="qualification">
         <div class="container">
-            <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Experiencia</h1>
-                <h1 class="position-absolute text-uppercase text-primary">Mi trabajo</h1>
+            <div class="position-relative d-flex align-items-center justify-content-center section-header">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px rgba(255,255,255,0.07);">Experiencia</h1>
+                <h1 class="position-absolute text-uppercase">Mi trabajo</h1>
             </div>
             <div class="row align-items-center">
-                <div class="col-lg-6">
+                <div class="col-lg-6 fade-in-left">
                     <div class="border-left border-primary pt-2 pl-4 ml-2">
                         <div class="position-relative mb-4">
-                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-                            <h5 class="font-weight-bold mb-1">Desarrollador Web </h5>
-                            <p class="mb-2"><strong>Grupo Salinas </strong> | <small>2022 - actual</small></p>
-                            <p>Como miembro del equipo de frontend, ayudé a definir estándares de programación y mejores prácticas para frameworks como React, Angular y Vue. También creé e impartí cursos de desarrollo web a diferentes departamentos.</p>
-                            <p>Desempeñé un papel clave en el desarrollo de los primeros micro frontends de nuestra empresa y apoyé la migración de aplicaciones monolíticas a esta arquitectura</p>
+
+                            <h5 class="font-weight-bold mb-1">Frontend Developer & Tech Mentor</h5>
+                            <p class="mb-2"><strong>Grupo Salinas</strong> | <small>2022 - actual</small></p>
+                            <p>Lideré la adopción de micro frontends, migrando aplicaciones monolíticas a una arquitectura modular. Definí estándares de código para React, Angular y Vue adoptados por múltiples equipos. Diseñé e impartí cursos de desarrollo web internos.</p>
                         </div>
                         <div class="position-relative mb-4">
-                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+
                             <h5 class="font-weight-bold mb-1">Arquitecto de APIs</h5>
                             <p class="mb-2"><strong>Grupo Salinas</strong> | <small>2021 - 2022</small></p>
-                            <p>Como arquitecto de APIs, desempeñé un papel fundamental en la creación de interfaces estandarizadas que unificaron los servicios backend en diversas unidades de negocio. Diseñé y desarrollé APIs robustas utilizando contratos OpenAPI, garantizando la interoperabilidad y la eficiencia en toda la organización.
-                                Además, implementé pruebas de rendimiento exhaustivas para asegurar la escalabilidad y la confiabilidad de los servicios.</p>
+                            <p>Diseñé APIs estandarizadas con contratos OpenAPI que unificaron servicios backend en múltiples unidades de negocio. Implementé pruebas de rendimiento para garantizar escalabilidad bajo carga real.</p>
                         </div>
                         <div class="position-relative mb-4">
-                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-                            <h5 class="font-weight-bold mb-1">Desarrollador Web</h5>
+
+                            <h5 class="font-weight-bold mb-1">Desarrollador Fullstack</h5>
                             <p class="mb-2"><strong>Iterando</strong> | <small>2018 - 2021</small></p>
-                            <p>Mi rol era bastante diverso. Trabajé en todo, desde desarrollo frontend y backend hasta diseño de bases de datos. Fui el arquitecto principal de nuestro sistema de gestión de empleados y otros proyectos web que requerían datos y análisis en tiempo real. También tomé decisiones estratégicas de infraestructura para el despliegue de estas aplicaciones.</p>
+                            <p>Arquitecté el sistema de gestión de empleados de la empresa y plataformas con datos en tiempo real. Tomé decisiones de infraestructura para el despliegue en producción, cubriendo frontend, backend y diseño de bases de datos.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-6 fade-in-right">
                     <div class="border-left border-primary pt-2 pl-4 ml-2">
                         <div class="position-relative mb-4">
-                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+
                             <h5 class="font-weight-bold mb-1">Desarrollador Web</h5>
-                            <p class="mb-2"><strong>Fiscalía General del Estado de Veracruz</strong> | <small>2018 - 2018</small></p>
-                            <p>Ayudé a construir un sistema de denuncia de robo de vehículos que se integraba con el Registro Público Vehicular (REPUVE) para proporcionar información básica del vehículo. Esto formaba parte de un sistema de gestión de denuncias más amplio.</p>
+                            <p class="mb-2"><strong>Fiscalía General de Veracruz</strong> | <small>2018</small></p>
+                            <p>Desarrollé un sistema de denuncia de robo vehicular integrado con el Registro Público Vehicular (REPUVE), parte de una plataforma de gestión de denuncias a nivel estatal.</p>
                         </div>
                         <div class="position-relative mb-4">
-                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-                            <h5 class="font-weight-bold mb-1">Desarrollador Web</h5>
-                            <p class="mb-2"><strong>Freelancer</strong> | <small>2017 - 2018</small></p>
-                            <p>Como desarrollador web freelance, me especialice en el mantenimiento y la mejora continua de diversas aplicaciones web. 
-                                Mi adaptabilidad me permitió integrarme eficientemente en diferentes estructuras de proyectos y dominar una amplia gama de tecnologías,
-                                desde la optimización del rendimiento y la corrección de errores hasta la implementación de nuevas funcionalidades</p>
+
+                            <h5 class="font-weight-bold mb-1">Desarrollador Freelance</h5>
+                            <p class="mb-2"><strong>Independiente</strong> | <small>2017 - 2018</small></p>
+                            <p>Mantuve y optimicé aplicaciones web para múltiples clientes, resolviendo desde corrección de errores hasta implementación de nuevas funcionalidades. Adaptación rápida a distintos stacks y estructuras de proyecto.</p>
                         </div>
                         <div class="position-relative mb-4">
-                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+
                             <h5 class="font-weight-bold mb-1">Desarrollador Web</h5>
-                            <p class="mb-2"><strong> Hospital de Centro de Alta Especialidad (CAE)</strong> | <small>2015 - 2016</small></p>
-                            <p>Construí la base para una nueva plataforma administrativa hospitalaria, que ayudará al personal a gestionar registros. También desarrollé un módulo para el procesamiento de pagos y la generación de informes.</p>
+                            <p class="mb-2"><strong>Hospital de Alta Especialidad (CAE)</strong> | <small>2015 - 2016</small></p>
+                            <p>Construí la plataforma administrativa del hospital desde cero: gestión de registros médicos, procesamiento de pagos y generación de reportes automatizados.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Qualification End -->
 
-
-    <!-- Skill Start -->
+    <!-- Skills -->
     <div class="container-fluid py-5" id="skill">
         <div class="container">
-            <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Habilidades</h1>
-                <h1 class="position-absolute text-uppercase text-primary">Mis habilidades</h1>
+            <div class="position-relative d-flex align-items-center justify-content-center section-header">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px rgba(255,255,255,0.07);">Habilidades</h1>
+                <h1 class="position-absolute text-uppercase">Mis habilidades</h1>
             </div>
             <div class="row align-items-center">
-                <div class="col-md-3">
+                <div class="col-md-3 fade-in stagger-1">
                     <div class="skill mb-4">
                         <div class="d-flex justify-content-between">
                             <h6 class="font-weight-bold">HTML</h6>
@@ -203,7 +194,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3 fade-in stagger-2">
                     <div class="skill mb-4">
                         <div class="d-flex justify-content-between">
                             <h6 class="font-weight-bold">React</h6>
@@ -216,7 +207,7 @@
                     <div class="skill mb-4">
                         <div class="d-flex justify-content-between">
                             <h6 class="font-weight-bold">Angular</h6>
-                            <h6 class="font-weight-bold">90%</h6>
+                            <h6 class="font-weight-bold">85%</h6>
                         </div>
                         <div class="progress">
                             <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
@@ -224,7 +215,7 @@
                     </div>
                     <div class="skill mb-4">
                         <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-bold">VUE</h6>
+                            <h6 class="font-weight-bold">Vue</h6>
                             <h6 class="font-weight-bold">70%</h6>
                         </div>
                         <div class="progress">
@@ -241,7 +232,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3 fade-in stagger-3">
                     <div class="skill mb-4">
                         <div class="d-flex justify-content-between">
                             <h6 class="font-weight-bold">Laravel</h6>
@@ -270,10 +261,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3 fade-in stagger-4">
                     <div class="skill mb-4">
                         <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-bold">Apigee, Cucumber, OpenAPI 2.0 y 3.0</h6>
+                            <h6 class="font-weight-bold">APIs & OpenAPI</h6>
                             <h6 class="font-weight-bold">95%</h6>
                         </div>
                         <div class="progress">
@@ -282,7 +273,7 @@
                     </div>
                     <div class="skill mb-4">
                         <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-bold">Project management: Slack, Trello, Invision, Figma, Teams</h6>
+                            <h6 class="font-weight-bold">Herramientas PM</h6>
                             <h6 class="font-weight-bold">90%</h6>
                         </div>
                         <div class="progress">
@@ -293,90 +284,107 @@
             </div>
         </div>
     </div>
-    <!-- Skill End -->
 
-
-    <!-- Services Start -->
+    <!-- Services -->
     <div class="container-fluid pt-5" id="service">
         <div class="container">
-            <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Servicios</h1>
-                <h1 class="position-absolute text-uppercase text-primary">Mis Servicios</h1>
+            <div class="position-relative d-flex align-items-center justify-content-center section-header">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px rgba(255,255,255,0.07);">Servicios</h1>
+                <h1 class="position-absolute text-uppercase">Lo que hago</h1>
             </div>
             <div class="row pb-3">
-                <div class="col-lg-4 col-md-6 text-center mb-5">
-                    <div class="d-flex align-items-center justify-content-center mb-4">
-                        <!-- <i class="fa fa-2x fa-laptop service-icon bg-primary text-white mr-3"></i> -->
-                        <i class="fa fa-2x fa-code service-icon bg-primary text-white mr-3"></i>
-                        <h4 class="font-weight-bold m-0">Código limpio</h4>
+                <div class="col-lg-4 col-md-6 mb-4 fade-in stagger-1">
+                    <div class="service-card">
+                        <div class="d-flex align-items-center justify-content-center mb-4">
+                            <i class="fa fa-2x fa-code service-icon bg-primary text-white mr-3"></i>
+                            <h4 class="font-weight-bold m-0">Código limpio</h4>
+                        </div>
+                        <p>Refactorización, patrones de diseño y principios SOLID aplicados a codebases reales en producción.</p>
                     </div>
-                    <p>Experiencia en refactorización de código, implementación de mejores prácticas y aplicación de los principios SOLID.</p>
                 </div>
-                <div class="col-lg-4 col-md-6 text-center mb-5">
-                    <div class="d-flex align-items-center justify-content-center mb-4">
-                        <i class="fa fa-2x fa-laptop-code service-icon bg-primary text-white mr-3"></i>
-                        <h4 class="font-weight-bold m-0">Desarrollo web</h4>
+                <div class="col-lg-4 col-md-6 mb-4 fade-in stagger-2">
+                    <div class="service-card">
+                        <div class="d-flex align-items-center justify-content-center mb-4">
+                            <i class="fa fa-2x fa-laptop-code service-icon bg-primary text-white mr-3"></i>
+                            <h4 class="font-weight-bold m-0">Desarrollo frontend</h4>
+                        </div>
+                        <p>Aplicaciones en React, Angular y Vue con arquitecturas escalables, desde SPAs hasta micro frontends.</p>
                     </div>
-                    <p> Mi conocimiento de diversas tecnologías me permite adaptarme al proyecto y proporcionar soluciones innovadoras.</p>
                 </div>
-                <div class="col-lg-4 col-md-6 text-center mb-5">
-                    <div class="d-flex align-items-center justify-content-center mb-4">
-                        <i class="fa fa-2x fa-server service-icon bg-primary text-white mr-3"></i>
-                        <h4 class="font-weight-bold m-0">Despliegue de proyectos</h4>
+                <div class="col-lg-4 col-md-6 mb-4 fade-in stagger-3">
+                    <div class="service-card">
+                        <div class="d-flex align-items-center justify-content-center mb-4">
+                            <i class="fa fa-2x fa-server service-icon bg-primary text-white mr-3"></i>
+                            <h4 class="font-weight-bold m-0">CI/CD y despliegue</h4>
+                        </div>
+                        <p>Configuración de pipelines, gestión de servidores y despliegue automatizado en AWS y entornos cloud.</p>
                     </div>
-                    <p>Mi experiencia con tecnologías CI/CD y gestión de servidores me permite desplegar aplicaciones web en internet.</p>
                 </div>
-                <div class="col-lg-4 col-md-6 text-center mb-5">
-                    <div class="d-flex align-items-center justify-content-center mb-4">
-                        <i class="fas fa-2x fa-project-diagram service-icon bg-primary text-white mr-3"></i>
-                        <h4 class="font-weight-bold m-0">Proyectos escalables</h4>
+                <div class="col-lg-4 col-md-6 mb-4 fade-in stagger-4">
+                    <div class="service-card">
+                        <div class="d-flex align-items-center justify-content-center mb-4">
+                            <i class="fas fa-2x fa-project-diagram service-icon bg-primary text-white mr-3"></i>
+                            <h4 class="font-weight-bold m-0">Diseño de APIs</h4>
+                        </div>
+                        <p>Contratos OpenAPI, versionado y pruebas de rendimiento para APIs que conectan múltiples servicios.</p>
                     </div>
-                    <p>El uso de control de versiones (Git) y microfrontends facilita el desarrollo de proyectos escalables y permite la integración con otros proyectos.</p>
                 </div>
-                <div class="col-lg-4 col-md-6 text-center mb-5">
-                    <div class="d-flex align-items-center justify-content-center mb-4">
-                        <i class="fa fa-2x fa-search service-icon bg-primary text-white mr-3"></i>
-                        <h4 class="font-weight-bold m-0">Análisis de requerimientos</h4>
+                <div class="col-lg-4 col-md-6 mb-4 fade-in stagger-5">
+                    <div class="service-card">
+                        <div class="d-flex align-items-center justify-content-center mb-4">
+                            <i class="fa fa-2x fa-chalkboard-teacher service-icon bg-primary text-white mr-3"></i>
+                            <h4 class="font-weight-bold m-0">Mentoría técnica</h4>
+                        </div>
+                        <p>Capacitación en frameworks frontend, code reviews y definición de estándares para equipos de desarrollo.</p>
                     </div>
-                    <p>Definir correctamente los requisitos y las reglas de negocio facilita la creación de flujos de trabajo y el uso compartido de aplicaciones..</p>
                 </div>
-                <div class="col-lg-4 col-md-6 text-center mb-5">
-                    <div class="d-flex align-items-center justify-content-center mb-4">
-                        <i class="fas fa-2x fa-users service-icon bg-primary text-white mr-3"></i>
-                        <h4 class="font-weight-bold m-0">Trabajo en equipo</h4>
+                <div class="col-lg-4 col-md-6 mb-4 fade-in stagger-6">
+                    <div class="service-card">
+                        <div class="d-flex align-items-center justify-content-center mb-4">
+                            <i class="fas fa-2x fa-cubes service-icon bg-primary text-white mr-3"></i>
+                            <h4 class="font-weight-bold m-0">Arquitectura frontend</h4>
+                        </div>
+                        <p>Migración de monolitos a micro frontends, decisiones de stack y estrategias de escalabilidad.</p>
                     </div>
-                    <p>El trabajo en equipo y la delegación son esenciales para alcanzar todos los objetivos del proyecto.</p>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Services End -->
 
-    <!-- Portafolio Start -->
-    <!-- Testimonial End -->
+    <!-- Contact CTA -->
+    <div class="container-fluid py-5" id="contact">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center fade-in">
+                    <div class="contact-cta">
+                        <h2 class="mb-3">Trabajemos juntos</h2>
+                        <p class="mb-4">Si buscas un desarrollador senior para tu próximo proyecto o necesitas consultoría técnica, estoy disponible para conversarlo.</p>
+                        <a href="mailto:eduarsb4@gmail.com" class="btn btn-cta mr-3">Enviar correo</a>
+                        <a href="https://linkedin.com/in/hectorsb4" target="_blank" class="btn btn-cta-outline">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    <!-- Footer Start -->
-    <div class="container-fluid bg-primary text-white mt-5 py-5 px-sm-3 px-md-5">
-        <div class="container text-center py-5">
-            <div class="d-flex justify-content-center mb-4">
+    <!-- Footer -->
+    <div class="container-fluid text-white py-4 px-sm-3 px-md-5 footer-section">
+        <div class="container text-center py-3">
+            <div class="d-flex justify-content-center mb-3">
                 <a class="btn btn-light btn-social mr-2" href="https://github.com/eduarsb" target="_blank"><i class="fab fa-github"></i></a>
-                <a class="btn btn-light btn-social mr-2" href="https://www.facebook.com/eduarsb4" target="_blank"><i class="fab fa-facebook-f"></i></a>
                 <a class="btn btn-light btn-social mr-2" href="https://linkedin.com/in/hectorsb4" target="_blank"><i class="fab fa-linkedin-in"></i></a>
                 <a class="btn btn-light btn-social mr-2" href="mailto:eduarsb4@gmail.com"><i class="fas fa-envelope"></i></a>
-                <a class="btn btn-light btn-social mr-2" href="https://skyloft.xyz" target="_blank"><i class="fa fa-globe"></i></a>
+                <a class="btn btn-light btn-social mr-2" href="https://www.dawnforge.xyz" target="_blank"><i class="fa fa-globe"></i></a>
             </div>
-            <p class="m-0">&copy; <a class="text-white font-weight-bold" href="#">eduardo</a>. All Rights Reserved. </p>
-            </p>
+            <p class="m-0 copyright-text">&copy; 2026 <a href="#">Eduardo Sánchez</a>. Todos los derechos reservados.</p>
         </div>
     </div>
-    <!-- Footer End -->
 
     <!-- Scroll to Bottom -->
     <i class="fa fa-2x fa-angle-down text-white scroll-to-bottom"></i>
 
     <!-- Back to Top -->
     <a href="#" class="btn btn-outline-dark px-0 back-to-top"><i class="fa fa-angle-double-up"></i></a>
-
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
@@ -388,9 +396,25 @@
     <script src="lib/isotope/isotope.pkgd.min.js"></script>
     <script src="lib/lightbox/js/lightbox.min.js"></script>
 
-
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+
+    <!-- Scroll Animations -->
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var observer = new IntersectionObserver(function(entries) {
+            entries.forEach(function(entry) {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+        document.querySelectorAll('.fade-in, .fade-in-left, .fade-in-right').forEach(function(el) {
+            observer.observe(el);
+        });
+    });
+    </script>
 </body>
 
 </html>

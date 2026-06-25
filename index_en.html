@@ -3,26 +3,31 @@
 
 <head>
     <meta charset="utf-8">
-    <title>eduarsb</title>
+    <title>Eduardo Sanchez | Web Developer</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta name="description" content="Professional portfolio of Eduardo Sánchez - Senior Web Developer">
+    <meta name="theme-color" content="#0a0a0f">
     <link rel="icon" href="img/icon.png" type="image/x-icon">
 
-    <!-- Google Web Fonts -->
-    <!-- <link rel="preconnect" href="https://fonts.gstatic.com"> -->
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">  -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
 
-    <!-- Libraries Stylesheet -->
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <!-- Font Awesome 6 -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
 
-    <!-- Customized Bootstrap Stylesheet -->
+    <!-- Base Stylesheet (Bootstrap grid) -->
     <link href="css/style.css" rel="stylesheet">
+
+    <!-- Dark Theme -->
+    <link href="css/dark-theme.css" rel="stylesheet">
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="51">
-    <!-- Navbar Start -->
-    <nav class="navbar fixed-top shadow-sm navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-lg-5">
+    <!-- Navbar -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light py-3 py-lg-0 px-lg-5">
+        <a href="index.html" class="lang-switch" title="Cambiar a español">ES</a>
         <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -30,134 +35,128 @@
             <div class="navbar-nav m-auto py-0">
                 <a href="#home" class="nav-item nav-link active">Home</a>
                 <a href="#about" class="nav-item nav-link">About</a>
-                <a href="#qualification" class="nav-item nav-link">Expericence</a>
-                <a href="#skill" class="nav-item nav-link">Skill</a>
-                <a href="#service" class="nav-item nav-link">Service</a>
-                <a href="#portfolio" class="nav-item nav-link">Portfolio</a>
+                <a href="#qualification" class="nav-item nav-link">Experience</a>
+                <a href="#skill" class="nav-item nav-link">Skills</a>
+                <a href="#service" class="nav-item nav-link">Services</a>
+                <a href="#contact" class="nav-item nav-link">Contact</a>
             </div>
         </div>
     </nav>
-    <!-- Navbar End -->
 
-    <!-- Header Start -->
-    <div class="container-fluid bg-primary d-flex align-items-center mb-5 py-5" id="home" style="min-height: 100vh;">
+    <!-- Hero -->
+    <div class="container-fluid d-flex align-items-center py-5" id="home" style="min-height: 100vh;">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-lg-5 px-5 pl-lg-0 pb-5 pb-lg-0">
-                    <img class="img-fluid w-100 rounded-circle shadow-sm" src="img/profile.jpg" alt="">
+                <div class="col-lg-5 px-5 pl-lg-0 pb-5 pb-lg-0 fade-in">
+                    <img class="img-fluid w-100" src="img/profile.jpg" alt="Eduardo Sánchez">
                 </div>
-                <div class="col-lg-7 text-center text-lg-left">
-                    <h3 class="text-white font-weight-normal mb-3">I'm</h3>
-                    <h1 class="display-3 text-uppercase text-primary mb-2" style="-webkit-text-stroke: 2px #ffffff;">Héctor Sánchez</h1>
-                    <h1 class="typed-text-output d-inline font-weight-lighter text-white"></h1>
-                    <div class="typed-text d-none">Frontend Developer, Web developer, API Designer, Backend Developer</div>
+                <div class="col-lg-7 text-center text-lg-left fade-in stagger-2">
+                    <h3 class="font-weight-normal mb-3">Hi, I'm</h3>
+                    <h1 class="display-3 text-uppercase mb-2">Eduardo Sánchez</h1>
+                    <h1 class="typed-text-output d-inline font-weight-lighter"></h1>
+                    <div class="typed-text d-none">Frontend Developer, API Architect, Micro Frontends, Tech Mentor</div>
                     <div class="d-flex align-items-center justify-content-center justify-content-lg-start pt-5">
-                        <a href="img/CV_HectorESB.pdf" download="CV_HectorESB.pdf" class="btn btn-outline-light mr-5">Download CV</a>
+                        <a href="img/hector_sanchez_cv_es.pdf" download="CV_EduardoSB.pdf" class="btn btn-outline-light mr-5">Download CV</a>
+                        <a href="https://www.dawnforge.xyz/" target="_blank" class="btn btn-light mr-5">My projects</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Header End -->
 
-
-    <!-- About Start -->
+    <!-- About -->
     <div class="container-fluid py-5" id="about">
         <div class="container">
-            <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">About</h1>
-                <h1 class="position-absolute text-uppercase text-primary">About Me</h1>
+            <div class="position-relative d-flex align-items-center justify-content-center section-header">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px rgba(255,255,255,0.07);">About</h1>
+                <h1 class="position-absolute text-uppercase">About me</h1>
             </div>
             <div class="row align-items-center">
-                <div class="col-lg-5 pb-4 pb-lg-0">
-                    <img class="img-fluid rounded w-100" src="img/about.jpg" alt="">
+                <div class="col-lg-5 pb-4 pb-lg-0 fade-in-left">
+                    <img class="img-fluid rounded w-100" src="img/about.jpg" alt="About me">
                 </div>
-                <div class="col-lg-7">
-                    <h3 class="mb-4">Hello there!</h3>
-                    <p>I'm a person who loves to be constantly learning, and that's why I believe I've gained a lot of experience in frontend development. I've had to face diverse scenarios to meet project objectives and have programmed in various technologies. In each case, I've had to learn by reading documentation, researching in forums, and now using AI among other things. This has allowed me to improve day by day. Additionally, my experience enables me to find optimal solutions to problems, or sometimes less-than-optimal ones, but they help me grow and improve for the future.</p>
+                <div class="col-lg-7 fade-in-right">
+                    <h3 class="mb-4">+10 years building for the web</h3>
+                    <p>I'm a senior frontend developer with experience leading the adoption of modern architectures like micro frontends, defining code standards for cross-functional teams, and designing APIs that connect multiple business units.</p>
+                    <p>I've worked with React, Angular, Vue, Laravel, and Node.js on projects ranging from hospital platforms to financial systems at companies like Grupo Salinas. My approach combines technical depth with product vision: I understand that code exists to solve real problems.</p>
                     <div class="row mb-3">
-                        <div class="col-sm-6 py-2"><h6>Name: <span class="text-secondary">Héctor Eduardo Sánchez Barrera</span></h6></div>
-                        <div class="col-sm-6 py-2"><h6>Birthday: <span class="text-secondary">6 April 1992</span></h6></div>
-                        <div class="col-sm-6 py-2"><h6>Degree: <span class="text-secondary">Master</span></h6></div>
-                        <div class="col-sm-6 py-2"><h6>Experience: <span class="text-secondary">10 Years</span></h6></div>
-                        <div class="col-sm-6 py-2"><h6>Email: <span class="text-secondary">eduarsb4@gmail.com</span></h6></div>
-                        <div class="col-sm-6 py-2"><h6>Address: <span class="text-secondary">Mexico City</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Name: <span>Eduardo Sánchez Barrera</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Degree: <span>Master's</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Location: <span>Mexico City</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Availability: <span>Remote / Hybrid</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>Email: <span>eduarsb4@gmail.com</span></h6></div>
+                        <div class="col-sm-6 py-2"><h6>LinkedIn: <span>hectorsb4</span></h6></div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- About End -->
 
-
-    <!-- Qualification Start -->
+    <!-- Experience -->
     <div class="container-fluid py-5" id="qualification">
         <div class="container">
-            <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Experience</h1>
-                <h1 class="position-absolute text-uppercase text-primary">Work HISTORY</h1>
+            <div class="position-relative d-flex align-items-center justify-content-center section-header">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px rgba(255,255,255,0.07);">Experience</h1>
+                <h1 class="position-absolute text-uppercase">Work history</h1>
             </div>
             <div class="row align-items-center">
-                <div class="col-lg-6">
+                <div class="col-lg-6 fade-in-left">
                     <div class="border-left border-primary pt-2 pl-4 ml-2">
                         <div class="position-relative mb-4">
-                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-                            <h5 class="font-weight-bold mb-1">Frontend developer </h5>
-                            <p class="mb-2"><strong>Grupo Salinas </strong> | <small>2022 - current</small></p>
-                            <p>As a member of the frontend team, I helped define programming standards and best practices for frameworks like React, Angular, and Vue. I also created and taught web development courses to different departments.</p>
-                            <p>I played a key role in developing our company's first micro frontends and supported the migration of monolithic applications to this architecture.</p>
+
+                            <h5 class="font-weight-bold mb-1">Frontend Developer & Tech Mentor</h5>
+                            <p class="mb-2"><strong>Grupo Salinas</strong> | <small>2022 - present</small></p>
+                            <p>Led the adoption of micro frontends, migrating monolithic applications to a modular architecture. Defined code standards for React, Angular, and Vue adopted across multiple teams. Designed and delivered internal web development courses.</p>
                         </div>
                         <div class="position-relative mb-4">
-                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+
                             <h5 class="font-weight-bold mb-1">API Architect</h5>
                             <p class="mb-2"><strong>Grupo Salinas</strong> | <small>2021 - 2022</small></p>
-                            <p>I contributed to the creation of APIs that standardized backend services across various business units. These APIs used OpenApi contracts and included robust performance testing.</p>
+                            <p>Designed standardized APIs with OpenAPI contracts that unified backend services across multiple business units. Implemented performance testing to ensure scalability under real load.</p>
                         </div>
                         <div class="position-relative mb-4">
-                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-                            <h5 class="font-weight-bold mb-1">Web developer, Frontend Developer & Backend Developer</h5>
+
+                            <h5 class="font-weight-bold mb-1">Fullstack Developer</h5>
                             <p class="mb-2"><strong>Iterando</strong> | <small>2018 - 2021</small></p>
-                            <p>My role was quite diverse. I worked on everything from frontend and backend development to database design. I was the lead architect for our employee management system and other web projects that required real-time data and analytics. I also made strategic infrastructure decisions for deploying these applications.</p>
+                            <p>Architected the company's employee management system and real-time data platforms. Made infrastructure decisions for production deployment, covering frontend, backend, and database design.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-6 fade-in-right">
                     <div class="border-left border-primary pt-2 pl-4 ml-2">
                         <div class="position-relative mb-4">
-                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-                            <h5 class="font-weight-bold mb-1">Frontend Developer</h5>
-                            <p class="mb-2"><strong>Fiscalía General del Estado de Veracruz</strong> | <small>2018 - 2018</small></p>
-                            <p>I helped build a vehicle theft reporting system that integrated with the Vehicle Public Registry (REPUVE) to provide basic vehicle information. This was part of a larger complaint management system.</p>
+
+                            <h5 class="font-weight-bold mb-1">Web Developer</h5>
+                            <p class="mb-2"><strong>Veracruz State Attorney General</strong> | <small>2018</small></p>
+                            <p>Developed a vehicle theft reporting system integrated with the Public Vehicle Registry (REPUVE), part of a state-level complaint management platform.</p>
                         </div>
                         <div class="position-relative mb-4">
-                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-                            <h5 class="font-weight-bold mb-1">Web developer</h5>
-                            <p class="mb-2"><strong>Freelancer</strong> | <small>2017 - 2018</small></p>
-                            <p>As a freelancer, I maintained and enhanced various web applications. I adapted to different project structures and technologies.</p>
+
+                            <h5 class="font-weight-bold mb-1">Freelance Developer</h5>
+                            <p class="mb-2"><strong>Independent</strong> | <small>2017 - 2018</small></p>
+                            <p>Maintained and optimized web applications for multiple clients, from bug fixes to new feature implementation. Quick adaptation to different stacks and project structures.</p>
                         </div>
                         <div class="position-relative mb-4">
-                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-                            <h5 class="font-weight-bold mb-1">Frontend developer & Backend Developer</h5>
-                            <p class="mb-2"><strong> Hospital de Centro de Alta Especialidad (CAE)</strong> | <small>2015 - 2016</small></p>
-                            <p>I built the foundation for a new hospital administrative platform, which will help staff manage records. I also developed a module for payment processing and reporting.</p>
+
+                            <h5 class="font-weight-bold mb-1">Web Developer</h5>
+                            <p class="mb-2"><strong>High Specialty Hospital (CAE)</strong> | <small>2015 - 2016</small></p>
+                            <p>Built the hospital's administrative platform from scratch: medical records management, payment processing, and automated report generation.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Qualification End -->
 
-
-    <!-- Skill Start -->
+    <!-- Skills -->
     <div class="container-fluid py-5" id="skill">
         <div class="container">
-            <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Skills</h1>
-                <h1 class="position-absolute text-uppercase text-primary">My Skills</h1>
+            <div class="position-relative d-flex align-items-center justify-content-center section-header">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px rgba(255,255,255,0.07);">Skills</h1>
+                <h1 class="position-absolute text-uppercase">My skills</h1>
             </div>
             <div class="row align-items-center">
-                <div class="col-md-3">
+                <div class="col-md-3 fade-in stagger-1">
                     <div class="skill mb-4">
                         <div class="d-flex justify-content-between">
                             <h6 class="font-weight-bold">HTML</h6>
@@ -194,17 +193,8 @@
                             <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                     </div>
-                    <div class="skill mb-4">
-                        <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-bold">Java</h6>
-                            <h6 class="font-weight-bold">60%</h6>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3 fade-in stagger-2">
                     <div class="skill mb-4">
                         <div class="d-flex justify-content-between">
                             <h6 class="font-weight-bold">React</h6>
@@ -220,12 +210,12 @@
                             <h6 class="font-weight-bold">85%</h6>
                         </div>
                         <div class="progress">
-                            <div class="progress-bar bg-info" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                     </div>
                     <div class="skill mb-4">
                         <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-bold">VUE</h6>
+                            <h6 class="font-weight-bold">Vue</h6>
                             <h6 class="font-weight-bold">70%</h6>
                         </div>
                         <div class="progress">
@@ -241,6 +231,8 @@
                             <div class="progress-bar bg-info" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                     </div>
+                </div>
+                <div class="col-md-3 fade-in stagger-3">
                     <div class="skill mb-4">
                         <div class="d-flex justify-content-between">
                             <h6 class="font-weight-bold">Laravel</h6>
@@ -250,8 +242,6 @@
                             <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-3">
                     <div class="skill mb-4">
                         <div class="d-flex justify-content-between">
                             <h6 class="font-weight-bold">AWS Services</h6>
@@ -259,33 +249,6 @@
                         </div>
                         <div class="progress">
                             <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                    <div class="skill mb-4">
-                        <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-bold">GCP & Apigee</h6>
-                            <h6 class="font-weight-bold">65%</h6>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                    <div class="skill mb-4">
-                        <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-bold">OpenAPI 2.0 y 3.0</h6>
-                            <h6 class="font-weight-bold">95%</h6>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                    <div class="skill mb-4">
-                        <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-bold">Postman</h6>
-                            <h6 class="font-weight-bold">90%</h6>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                     </div>
                     <div class="skill mb-4">
@@ -298,28 +261,19 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-3 fade-in stagger-4">
                     <div class="skill mb-4">
                         <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-bold">Project management: Slack, Trello, Invision, Figma, Teams</h6>
-                            <h6 class="font-weight-bold">90%</h6>
+                            <h6 class="font-weight-bold">APIs & OpenAPI</h6>
+                            <h6 class="font-weight-bold">95%</h6>
                         </div>
                         <div class="progress">
-                            <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                     </div>
                     <div class="skill mb-4">
                         <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-bold">Cucumber</h6>
-                            <h6 class="font-weight-bold">90%</h6>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                    <div class="skill mb-4">
-                        <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-bold">Jenkins</h6>
+                            <h6 class="font-weight-bold">PM Tools</h6>
                             <h6 class="font-weight-bold">90%</h6>
                         </div>
                         <div class="progress">
@@ -330,146 +284,107 @@
             </div>
         </div>
     </div>
-    <!-- Skill End -->
 
-
-    <!-- Services Start -->
+    <!-- Services -->
     <div class="container-fluid pt-5" id="service">
         <div class="container">
-            <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Service</h1>
-                <h1 class="position-absolute text-uppercase text-primary">My Services</h1>
+            <div class="position-relative d-flex align-items-center justify-content-center section-header">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px rgba(255,255,255,0.07);">Services</h1>
+                <h1 class="position-absolute text-uppercase">What I do</h1>
             </div>
             <div class="row pb-3">
-                <div class="col-lg-4 col-md-6 text-center mb-5">
-                    <div class="d-flex align-items-center justify-content-center mb-4">
-                        <!-- <i class="fa fa-2x fa-laptop service-icon bg-primary text-white mr-3"></i> -->
-                        <i class="fa fa-2x fa-code service-icon bg-primary text-white mr-3"></i>
-                        <h4 class="font-weight-bold m-0">Clean Code</h4>
+                <div class="col-lg-4 col-md-6 mb-4 fade-in stagger-1">
+                    <div class="service-card">
+                        <div class="d-flex align-items-center justify-content-center mb-4">
+                            <i class="fa fa-2x fa-code service-icon bg-primary text-white mr-3"></i>
+                            <h4 class="font-weight-bold m-0">Clean code</h4>
+                        </div>
+                        <p>Refactoring, design patterns, and SOLID principles applied to real production codebases.</p>
                     </div>
-                    <p>Experience in code refactoring, implementing best practices, and applying SOLID principles.</p>
                 </div>
-                <div class="col-lg-4 col-md-6 text-center mb-5">
-                    <div class="d-flex align-items-center justify-content-center mb-4">
-                        <i class="fa fa-2x fa-laptop-code service-icon bg-primary text-white mr-3"></i>
-                        <h4 class="font-weight-bold m-0">Web Development</h4>
+                <div class="col-lg-4 col-md-6 mb-4 fade-in stagger-2">
+                    <div class="service-card">
+                        <div class="d-flex align-items-center justify-content-center mb-4">
+                            <i class="fa fa-2x fa-laptop-code service-icon bg-primary text-white mr-3"></i>
+                            <h4 class="font-weight-bold m-0">Frontend development</h4>
+                        </div>
+                        <p>Applications in React, Angular, and Vue with scalable architectures, from SPAs to micro frontends.</p>
                     </div>
-                    <p> My knowledge of various technologies allows me to adapt to the project and provide innovative solutions.</p>
                 </div>
-                <div class="col-lg-4 col-md-6 text-center mb-5">
-                    <div class="d-flex align-items-center justify-content-center mb-4">
-                        <i class="fa fa-2x fa-server service-icon bg-primary text-white mr-3"></i>
-                        <h4 class="font-weight-bold m-0">Project Deployments</h4>
+                <div class="col-lg-4 col-md-6 mb-4 fade-in stagger-3">
+                    <div class="service-card">
+                        <div class="d-flex align-items-center justify-content-center mb-4">
+                            <i class="fa fa-2x fa-server service-icon bg-primary text-white mr-3"></i>
+                            <h4 class="font-weight-bold m-0">CI/CD & deployment</h4>
+                        </div>
+                        <p>Pipeline configuration, server management, and automated deployment on AWS and cloud environments.</p>
                     </div>
-                    <p>My experience with CI/CD technologies and server management allows me to deploy web applications to the internet.</p>
                 </div>
-                <div class="col-lg-4 col-md-6 text-center mb-5">
-                    <div class="d-flex align-items-center justify-content-center mb-4">
-                        <i class="fas fa-2x fa-project-diagram service-icon bg-primary text-white mr-3"></i>
-                        <h4 class="font-weight-bold m-0">Scalable projects</h4>
+                <div class="col-lg-4 col-md-6 mb-4 fade-in stagger-4">
+                    <div class="service-card">
+                        <div class="d-flex align-items-center justify-content-center mb-4">
+                            <i class="fas fa-2x fa-project-diagram service-icon bg-primary text-white mr-3"></i>
+                            <h4 class="font-weight-bold m-0">API design</h4>
+                        </div>
+                        <p>OpenAPI contracts, versioning, and performance testing for APIs connecting multiple services.</p>
                     </div>
-                    <p>The use of version control (Git) and microfrontends facilitates the development of scalable projects and allows integration with other projects.</p>
                 </div>
-                <div class="col-lg-4 col-md-6 text-center mb-5">
-                    <div class="d-flex align-items-center justify-content-center mb-4">
-                        <i class="fa fa-2x fa-search service-icon bg-primary text-white mr-3"></i>
-                        <h4 class="font-weight-bold m-0">Requirements analysis</h4>
+                <div class="col-lg-4 col-md-6 mb-4 fade-in stagger-5">
+                    <div class="service-card">
+                        <div class="d-flex align-items-center justify-content-center mb-4">
+                            <i class="fa fa-2x fa-chalkboard-teacher service-icon bg-primary text-white mr-3"></i>
+                            <h4 class="font-weight-bold m-0">Tech mentoring</h4>
+                        </div>
+                        <p>Frontend framework training, code reviews, and standards definition for development teams.</p>
                     </div>
-                    <p>Defining requirements and business rules correctly facilitates the creation of workflows and application sharing.</p>
                 </div>
-                <div class="col-lg-4 col-md-6 text-center mb-5">
-                    <div class="d-flex align-items-center justify-content-center mb-4">
-                        <i class="fas fa-2x fa-users service-icon bg-primary text-white mr-3"></i>
-                        <h4 class="font-weight-bold m-0">Teamwork</h4>
+                <div class="col-lg-4 col-md-6 mb-4 fade-in stagger-6">
+                    <div class="service-card">
+                        <div class="d-flex align-items-center justify-content-center mb-4">
+                            <i class="fas fa-2x fa-cubes service-icon bg-primary text-white mr-3"></i>
+                            <h4 class="font-weight-bold m-0">Frontend architecture</h4>
+                        </div>
+                        <p>Monolith to micro frontend migration, stack decisions, and scalability strategies.</p>
                     </div>
-                    <p>Teamwork and delegation are essential to achieving all project objectives.</p>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Services End -->
 
-    <!-- Portafolio Start -->
-    <div class="container-fluid py-5" id="portfolio">
+    <!-- Contact CTA -->
+    <div class="container-fluid py-5" id="contact">
         <div class="container">
-            <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Projects</h1>
-                <h1 class="position-absolute text-uppercase text-primary">My Portfolio</h1>
-            </div>
             <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="owl-carousel testimonial-carousel">
-                        <div class="text-center">
-                            <h5 class="font-weight-bold m-0">Internal portal</h5>
-                            <h4 class="font-weight-light mb-4">We developed an internal portal to streamline communication within our department.</h4>
-                            <div style="font-size: 48px;"><i class="fab fa-react text-primary"></i></div>
-                            <span>Grupo Salinas</span>
-                        </div>
-                        <div class="text-center">
-                            <h5 class="font-weight-bold m-0">Community service platform</h5>
-                            <h4 class="font-weight-light mb-4">The student community service hours platform allows students to track their volunteer work.</h4>
-                            <div style="font-size: 48px;"><i class="fab fa-react text-primary"></i><i class="fab fa-laravel text-primary"></i></div>
-                            <span>Universidad Panamericana</span>
-                        </div>
-                        <div class="text-center">
-                            <h5 class="font-weight-bold m-0">Employee management platform</h5>
-                            <h4 class="font-weight-light mb-4">Administrative platform for sending messages and announcements to employees on their mobile app</h4>
-                            <div style="font-size: 48px;"><i class="fab fa-angular text-primary"></i><i class="fab fa-laravel text-primary"></i></div>
-                            <span>Gigante</span>
-                        </div>
-                        <div class="text-center">
-                            <h5 class="font-weight-bold m-0">Route tracking system</h5>
-                            <h4 class="font-weight-light mb-4">Backend system for storing motorcycle routes and kilometers traveled</h4>
-                            <div style="font-size: 48px;"><i class="fab fa-react text-primary"></i><i class="fab fa-laravel text-primary"></i></div>
-                            <span>Bajaj</span>
-                        </div>
-                        <div class="text-center">
-                            <h5 class="font-weight-bold m-0">Bank loan app</h5>
-                            <h4 class="font-weight-light mb-4">The bank loan application web app provides a user-friendly interface for students to apply for loans.</h4>
-                            <div style="font-size: 48px;"><i class="fab fa-laravel text-primary"></i></div>
-                            <span>Emisha</span>
-                        </div>
-                        <div class="text-center">
-                            <h5 class="font-weight-bold m-0">Statistics web app</h5>
-                            <h4 class="font-weight-light mb-4">A web app that offers an intuitive visualization of the most relevant data about shipments within your platform.</h4>
-                            <div style="font-size: 48px;"><i class="fab fa-vuejs text-primary"></i></div>
-                            <span>Shipbop</span>
-                        </div>
-                        <div class="text-center">
-                            <h5 class="font-weight-bold m-0">Registration form</h5>
-                            <h4 class="font-weight-light mb-4">User registration module that can be easily integrated into different web platforms.</h4>
-                            <div style="font-size: 48px;"><i class="fab fa-angular text-primary"></i></div>
-                            <span>Book&Learn</span>
-                        </div>
+                <div class="col-lg-8 text-center fade-in">
+                    <div class="contact-cta">
+                        <h2 class="mb-3">Let's work together</h2>
+                        <p class="mb-4">Looking for a senior developer for your next project or need technical consulting? I'm available to discuss it.</p>
+                        <a href="mailto:eduarsb4@gmail.com" class="btn btn-cta mr-3">Send email</a>
+                        <a href="https://linkedin.com/in/hectorsb4" target="_blank" class="btn btn-cta-outline">LinkedIn</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Testimonial End -->
 
-    <!-- Footer Start -->
-    <div class="container-fluid bg-primary text-white mt-5 py-5 px-sm-3 px-md-5">
-        <div class="container text-center py-5">
-            <div class="d-flex justify-content-center mb-4">
+    <!-- Footer -->
+    <div class="container-fluid text-white py-4 px-sm-3 px-md-5 footer-section">
+        <div class="container text-center py-3">
+            <div class="d-flex justify-content-center mb-3">
                 <a class="btn btn-light btn-social mr-2" href="https://github.com/eduarsb" target="_blank"><i class="fab fa-github"></i></a>
-                <a class="btn btn-light btn-social mr-2" href="https://www.facebook.com/eduarsb4" target="_blank"><i class="fab fa-facebook-f"></i></a>
                 <a class="btn btn-light btn-social mr-2" href="https://linkedin.com/in/hectorsb4" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                <a class="btn btn-light btn-social" href="mailto:eduarsb4@gmail.com"><i class="fas fa-envelope"></i></a>
+                <a class="btn btn-light btn-social mr-2" href="mailto:eduarsb4@gmail.com"><i class="fas fa-envelope"></i></a>
+                <a class="btn btn-light btn-social mr-2" href="https://www.dawnforge.xyz" target="_blank"><i class="fa fa-globe"></i></a>
             </div>
-            <p class="m-0">&copy; <a class="text-white font-weight-bold" href="#">eduardo</a>. All Rights Reserved. </p>
-            <p style="font-size: 12px;">Template designed by <a class="text-white font-weight-bold" href="https://htmlcodex.com">HTML Codex</a>
-            </p>
+            <p class="m-0 copyright-text">&copy; 2026 <a href="#">Eduardo Sánchez</a>. All rights reserved.</p>
         </div>
     </div>
-    <!-- Footer End -->
 
     <!-- Scroll to Bottom -->
     <i class="fa fa-2x fa-angle-down text-white scroll-to-bottom"></i>
 
     <!-- Back to Top -->
     <a href="#" class="btn btn-outline-dark px-0 back-to-top"><i class="fa fa-angle-double-up"></i></a>
-
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
@@ -481,9 +396,25 @@
     <script src="lib/isotope/isotope.pkgd.min.js"></script>
     <script src="lib/lightbox/js/lightbox.min.js"></script>
 
-
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+
+    <!-- Scroll Animations -->
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var observer = new IntersectionObserver(function(entries) {
+            entries.forEach(function(entry) {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+        document.querySelectorAll('.fade-in, .fade-in-left, .fade-in-right').forEach(function(el) {
+            observer.observe(el);
+        });
+    });
+    </script>
 </body>
 
 </html>
