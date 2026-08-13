@@ -1008,3 +1008,68 @@ footer .btn-social:hover,
 a, .btn, .skill, .service-icon, .nav-link {
   transition: all 0.3s ease;
 }
+
+/* ===== HERO (sin estilos inline, requerido por CSP) ===== */
+.hero-section {
+  min-height: 100vh;
+}
+
+.hero-headline {
+  color: var(--accent-cyan);
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.5rem;
+  letter-spacing: 0.02em;
+}
+
+.hero-lead {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: var(--text-secondary);
+  max-width: 560px;
+}
+
+@media (max-width: 991.98px) {
+  .hero-lead {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* ===== TITULOS DE SECCION (sin estilos inline, requerido por CSP) ===== */
+.section-header-bg {
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.07);
+}
+
+/* ===== GRUPOS DE HABILIDADES (sustituyen a las barras de porcentaje) ===== */
+.skill-group h5 {
+  color: var(--text-primary);
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+.skill-group h5 i {
+  color: var(--accent-cyan);
+}
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.skill-tags span {
+  display: inline-block;
+  padding: 0.35rem 0.85rem;
+  border-radius: 999px;
+  border: 1px solid var(--border-glass);
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--text-secondary);
+  font-family: 'Inter', sans-serif;
+  font-size: 0.85rem;
+  transition: all 0.3s ease;
+}
+
+.skill-tags span:hover {
+  border-color: rgba(6, 182, 212, 0.4);
+  color: var(--text-primary);
+  background: rgba(6, 182, 212, 0.08);
+}
