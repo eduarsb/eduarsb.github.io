@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>CV — Eduardo Sánchez</title>
+<style>
+  /* Fuente del CV. Regenerar el PDF con:
+     google-chrome --headless --disable-gpu --no-pdf-header-footer \
+       --print-to-pdf=../img/eduardo_sanchez_cv_es.pdf cv-es.html      */
+
+  @page { size: Letter; margin: 0; }
+
+  :root {
+    --ink: #1a2332;
+    --ink-soft: #3d4a5c;
+    --accent: #0e7490;
+    --rule: #d8dde4;
+    --chip-bg: #f0f4f7;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html, body { background: #fff; }
+
+  body {
+    font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+    color: var(--ink);
+    font-size: 9.6pt;
+    line-height: 1.45;
+    padding: 14mm 16mm;
+  }
+
+  /* ---- Cabecera ---- */
+  header { border-bottom: 2.5px solid var(--accent); padding-bottom: 4.5mm; margin-bottom: 5mm; }
+
+  h1 {
+    font-size: 21pt;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+  }
+
+  .headline {
+    font-size: 11.5pt;
+    font-weight: 600;
+    color: var(--accent);
+    margin-top: 1mm;
+  }
+
+  .contact {
+    margin-top: 2.5mm;
+    font-size: 8.8pt;
+    color: var(--ink-soft);
+  }
+
+  .contact span + span::before { content: "  ·  "; color: var(--rule); }
+
+  /* ---- Secciones ---- */
+  section { margin-bottom: 4.5mm; }
+
+  h2 {
+    font-size: 10.5pt;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--accent);
+    border-bottom: 1px solid var(--rule);
+    padding-bottom: 1mm;
+    margin-bottom: 2.5mm;
+    break-after: avoid-page;
+  }
+
+  section.keep-together { break-inside: avoid; }
+
+  .perfil p + p { margin-top: 1.5mm; }
+
+  /* ---- Experiencia ---- */
+  .job { margin-bottom: 3.2mm; break-inside: avoid; }
+
+  .job-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  .job-title { font-size: 10.2pt; font-weight: 700; }
+  .job-org { color: var(--ink-soft); font-weight: 600; }
+  .job-dates { color: var(--ink-soft); font-size: 8.8pt; white-space: nowrap; }
+
+  ul { margin: 1mm 0 0 4.5mm; }
+  li { margin-bottom: 0.8mm; }
+
+  /* ---- Habilidades ---- */
+  .skills-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2mm 6mm; }
+
+  .skill-group h3 { font-size: 9.4pt; font-weight: 700; margin-bottom: 0.8mm; }
+
+  .skill-group p { color: var(--ink-soft); }
+
+  /* ---- Formación / Idiomas ---- */
+  .edu { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 1.2mm; }
+  .edu b { font-weight: 700; }
+  .edu .where { color: var(--ink-soft); }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Eduardo Sánchez</h1>
+  <div class="headline">Ingeniero de Software Senior — Infraestructura Cloud y Seguridad</div>
+  <div class="contact">
+    <span>eduarsb4@gmail.com</span>
+    <span>+52 55 7010 9033</span>
+    <span>eduarsb.github.io</span>
+    <span>github.com/eduarsb</span>
+    <span>Remoto — GMT-4/GMT-6, base fiscal en México</span>
+  </div>
+</header>
+
+<section class="perfil">
+  <h2>Perfil</h2>
+  <p>Ingeniero de software con más de 10 años de experiencia llevando sistemas desde el diseño hasta producción. Mi especialidad es el punto donde el código toca la infraestructura: arquitecturas en AWS, pipelines de CI/CD, administración y hardening de servidores Linux, y auditorías de seguridad sobre sistemas en operación.</p>
+  <p>Vengo del desarrollo full-stack —React, Angular, Vue en el frontend; Laravel, Node.js y Python en el backend— lo que me permite diseñar infraestructura entendiendo lo que las aplicaciones realmente necesitan, y escribir código entendiendo dónde va a fallar en producción. He trabajado en sistemas financieros de alto tráfico, plataformas hospitalarias construidas desde cero y sistemas gubernamentales integrados con registros federales.</p>
+</section>
+
+<section>
+  <h2>Experiencia</h2>
+
+  <div class="job">
+    <div class="job-head">
+      <div class="job-title">Ingeniero Frontend &amp; Mentor Técnico — <span class="job-org">Grupo Salinas</span></div>
+      <div class="job-dates">2022 – actual</div>
+    </div>
+    <ul>
+      <li>Lideré la migración de dos sistemas monolíticos a arquitectura de micro frontends: la plataforma de gestión de despliegue de APIs del área de Fábrica de Transformación (~200 usuarios internos) y el sistema de recursos humanos para métricas de personal y gestión de nómina.</li>
+      <li>Definí los estándares de código y CI para React, Angular y Vue adoptados por múltiples equipos de distintas unidades de negocio.</li>
+      <li>Diseñé e impartí cursos internos de desarrollo web para ingenieros del grupo.</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="job-head">
+      <div class="job-title">Arquitecto de APIs — <span class="job-org">Grupo Salinas</span></div>
+      <div class="job-dates">2021 – 2022</div>
+    </div>
+    <ul>
+      <li>Diseñé contratos OpenAPI que estandarizaron la integración de servicios backend entre unidades de negocio del grupo.</li>
+      <li>Implementé pruebas de rendimiento para validar el comportamiento de los servicios bajo carga real de producción.</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="job-head">
+      <div class="job-title">Desarrollador Full-Stack — <span class="job-org">Iterando</span></div>
+      <div class="job-dates">2018 – 2021</div>
+    </div>
+    <ul>
+      <li>Arquitecté de punta a punta el sistema de gestión de empleados de la empresa: frontend, backend, modelo de datos e infraestructura de despliegue en producción.</li>
+      <li>Construí plataformas con datos en tiempo real y fui responsable de las decisiones de infraestructura: configuración de servidores, Nginx, SSL, respaldos y monitoreo.</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="job-head">
+      <div class="job-title">Desarrollador Web — <span class="job-org">Fiscalía General del Estado de Veracruz</span></div>
+      <div class="job-dates">2018</div>
+    </div>
+    <ul>
+      <li>Desarrollé el sistema de denuncia de robo vehicular integrado con REPUVE (Registro Público Vehicular federal), diseñado para operación a nivel estatal.</li>
+      <li>El sistema procesaba ~100 denuncias diarias en su despliegue inicial en Xalapa, manejando datos sensibles de denunciantes con acceso controlado por roles.</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="job-head">
+      <div class="job-title">Desarrollador Web — <span class="job-org">Centro de Alta Especialidad "Dr. Rafael Lucio" (CAE)</span></div>
+      <div class="job-dates">2015 – 2016</div>
+    </div>
+    <ul>
+      <li>Construí desde cero el sistema de compras, inventario de materiales médicos y costeo de estudios de uno de los hospitales públicos de referencia del sur-sureste de México (196 camas, ~100,000 pacientes atendidos al año).</li>
+      <li>La plataforma centralizó el registro de insumos y el cálculo de costos de estudios para el área administrativa del hospital.</li>
+    </ul>
+  </div>
+</section>
+
+<section class="keep-together">
+  <h2>Habilidades</h2>
+  <div class="skills-grid">
+    <div class="skill-group">
+      <h3>Infraestructura y Cloud</h3>
+      <p>AWS (EC2, S3, Lambda, SQS, IAM, VPC) · Linux (administración y hardening) · Docker · Terraform · Nginx / Apache · CI/CD (GitHub Actions, Jenkins)</p>
+    </div>
+    <div class="skill-group">
+      <h3>Seguridad</h3>
+      <p>Auditorías de servidores · Hardening de sistemas · Gestión de SSL/TLS · JWT / OAuth</p>
+    </div>
+    <div class="skill-group">
+      <h3>Backend</h3>
+      <p>Laravel / PHP · Node.js / Express · Python · MySQL / MariaDB · MongoDB · APIs REST / OpenAPI · Socket.io</p>
+    </div>
+    <div class="skill-group">
+      <h3>Frontend</h3>
+      <p>React · Angular · Vue · TypeScript · Micro frontends · Tailwind / SASS</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Formación</h2>
+  <div class="edu">
+    <div><b>Maestría en Sistemas Interactivos Centrados en el Usuario</b> — <span class="where">Universidad Veracruzana</span></div>
+    <div class="job-dates">2015 – 2017</div>
+  </div>
+  <div class="edu">
+    <div><b>Licenciatura en Informática</b> — <span class="where">Universidad Veracruzana</span></div>
+    <div class="job-dates">2010 – 2015</div>
+  </div>
+</section>
+
+<section>
+  <h2>Idiomas</h2>
+  <p>Español (nativo) · Inglés (intermedio-avanzado, lectura y escritura técnica fluidas)</p>
+</section>
+
+</body>
+</html>
