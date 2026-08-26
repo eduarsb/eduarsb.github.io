@@ -1073,3 +1073,106 @@ a, .btn, .skill, .service-icon, .nav-link {
   color: var(--text-primary);
   background: rgba(6, 182, 212, 0.08);
 }
+
+/* ==========================================================================
+   Proyectos — una sola tarjeta ancha, no una grilla.
+   Con un proyecto, una grilla de tres columnas deja dos huecos y se lee como
+   "no tiene más". Una tarjeta a lo ancho se lee como "este es EL proyecto".
+   ========================================================================== */
+
+#projects .project-card {
+  background: var(--bg-glass-strong);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+  border: 1px solid var(--border-glass);
+  border-radius: 20px;
+  padding: 2.5rem 2rem;
+  transition: all 0.4s ease;
+  box-shadow:
+    0 4px 20px rgba(0, 0, 0, 0.15),
+    inset 0 1px 0 rgba(255, 255, 255, 0.06);
+}
+
+#projects .project-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(139, 92, 246, 0.3);
+  background: rgba(255, 255, 255, 0.09);
+  box-shadow:
+    0 16px 50px rgba(139, 92, 246, 0.1),
+    0 4px 20px rgba(0, 0, 0, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+#projects h4 {
+  font-size: 1.25rem;
+  color: var(--text-primary);
+}
+
+#projects p,
+#projects li {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+}
+
+#projects .project-stack {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+#projects .project-stack li {
+  background: rgba(139, 92, 246, 0.12);
+  border: 1px solid rgba(139, 92, 246, 0.25);
+  border-radius: 8px;
+  padding: 4px 12px;
+  font-size: 0.8rem;
+  color: var(--text-primary);
+}
+
+#projects .project-points {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.75rem 0;
+  text-align: left;
+}
+
+#projects .project-points li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.6rem;
+  line-height: 1.6;
+}
+
+/* El check se dibuja con CSS y no con un <i> por archivo: menos markup
+   duplicado entre index.html e index_en.html, que hay que mantener en espejo. */
+#projects .project-points li::before {
+  content: "\2713";
+  position: absolute;
+  left: 0;
+  color: var(--accent-violet);
+  font-weight: 700;
+}
+
+@media (max-width: 575.98px) {
+  #projects .project-card {
+    padding: 1.75rem 1.25rem;
+  }
+}
+
+/* Sin esto, <code> hereda el tamaño del navegador y desentona en el tema
+   oscuro: se ve más grande que el texto que lo rodea y sin contraste propio. */
+#projects code {
+  /* Sin nowrap, `terraform apply` se parte entre dos líneas y el recuadro
+     queda cortado por la mitad — se ve en la versión en inglés, donde el
+     párrafo cae distinto. */
+  white-space: nowrap;
+  background: rgba(6, 182, 212, 0.12);
+  border: 1px solid rgba(6, 182, 212, 0.22);
+  border-radius: 6px;
+  padding: 1px 6px;
+  font-size: 0.85em;
+  color: var(--text-primary);
+}

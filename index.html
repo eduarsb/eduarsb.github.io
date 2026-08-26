@@ -57,6 +57,7 @@
                 <a href="#qualification" class="nav-item nav-link">Experiencia</a>
                 <a href="#skill" class="nav-item nav-link">Habilidades</a>
                 <a href="#service" class="nav-item nav-link">Qué hago</a>
+                <a href="#projects" class="nav-item nav-link">Proyectos</a>
                 <a href="#contact" class="nav-item nav-link">Contacto</a>
             </div>
         </div>
@@ -278,6 +279,41 @@
                             <h4 class="font-weight-bold m-0">Mentoría técnica</h4>
                         </div>
                         <p>Formación de equipos, code reviews y definición de estándares.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Proyectos -->
+    <div class="container-fluid py-5" id="projects">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center section-header">
+                <h1 class="display-1 text-uppercase text-white section-header-bg">Proyectos</h1>
+                <h1 class="position-absolute text-uppercase">Qué construí</h1>
+            </div>
+            <div class="row justify-content-center pb-3">
+                <div class="col-lg-10 fade-in stagger-1">
+                    <div class="project-card">
+                        <div class="d-flex align-items-center mb-4">
+                            <i class="fas fa-2x fa-diagram-project service-icon bg-primary text-white mr-3"></i>
+                            <h4 class="font-weight-bold m-0">AWS Reference Stack — infraestructura como código</h4>
+                        </div>
+                        <p>Una arquitectura AWS pequeña pero con la forma de un sistema en producción, descrita entera en Terraform: un servicio web en contenedores detrás de un balanceador y una tubería de trabajo asíncrono, conectadas con permisos de mínimo privilegio. Se despliega con <code>terraform apply</code> y nada más.</p>
+                        <ul class="project-stack">
+                            <li>Terraform</li>
+                            <li>AWS</li>
+                            <li>ECS Fargate</li>
+                            <li>SQS</li>
+                            <li>Lambda</li>
+                            <li>IAM</li>
+                        </ul>
+                        <ul class="project-points">
+                            <li>Red en dos zonas de disponibilidad, con las tareas de cómputo en subredes privadas y salida a internet por un único NAT gateway.</li>
+                            <li>Cola de trabajos con cola de mensajes muertos tras tres fallos, para que un mensaje envenenado no bloquee el consumo.</li>
+                            <li>Cada permiso de IAM acotado al recurso que lo necesita: ninguna política con comodín.</li>
+                        </ul>
+                        <a class="btn btn-cta" href="https://github.com/eduarsb/aws-reference-stack" target="_blank" rel="noopener noreferrer">Ver el código en GitHub</a>
                     </div>
                 </div>
             </div>
